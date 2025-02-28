@@ -103,7 +103,6 @@ class Estimator(tf.estimator.Estimator):
   """Estimator wrapper to add reporting to metadata storage after evaluation."""
 
   def __init__(self,
-               model_fn,
                model_dir=None,
                config=None,
                params=None,
