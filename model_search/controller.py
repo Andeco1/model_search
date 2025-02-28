@@ -76,7 +76,7 @@ class ReplayState(object):
         my_id < towers_number or towers_number == 1)
     return output
 
-  def replay_is_importing_towers(self, my_id):
+  def replay_is_importing_towers(self,test, my_id):
     """Returns true if we are importing a tower in this replay trial.
 
     Examples:
