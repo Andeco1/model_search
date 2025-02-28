@@ -104,9 +104,6 @@ class Estimator(tf.estimator.Estimator):
 
   def __init__(self,
                model_fn,
-               model_dir=None,
-               config=None,
-               params=None,
                warm_start_from=None,
                metadata=None):
     tf.estimator.Estimator._assert_members_are_not_overridden = staticmethod(  # pylint: disable=protected-access
