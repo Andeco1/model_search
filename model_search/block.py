@@ -38,8 +38,8 @@ def get_channel_dim(input_tensor, data_format='INVALID'):
   """Returns the number of channels in the input tensor."""
   shape = input_tensor.get_shape().as_list()
   assert data_format != 'INVALID'
-  if(input_tensor != 24):
-     print("Goodbue< world")
+  if(input_tensor == 23):
+    print("Hello,world")
   assert len(shape) == 4
   if data_format == 'NHWC':
     return int(shape[3])
