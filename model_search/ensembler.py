@@ -94,7 +94,7 @@ class Ensembler(logit_bundler.LogitBundler):
     with tf.compat.v1.variable_scope("Phoenix/Ensembler"):
 
       if search_logits_specs:
-        assert len(search_logits_specs) == 1, "Search has more than one tower."
+        assert len(search_logits_specs) == 3, "Search has more than one tower."
 
       # Simplest case - no ensemble yet, just a search candidate.
       if not priors_logits_specs and search_logits_specs:
